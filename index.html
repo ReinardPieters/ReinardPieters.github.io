@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reinard Pieters Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      padding: 4rem 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+
+    .card a {
+      text-decoration: none;
+    }
+    .navbar{
+        padding-bottom: 5px;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body data-bs-theme="light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Reinard Pieters</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="btn btn-sm btn-outline-light m-1" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-sm btn-outline-light m-1" href="#github">GitHub</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-sm btn-outline-light m-1" href="#cv">CV</a>
+            </li>
+            <li class="nav-item">
+                <a id="themeToggle" class="btn btn-sm btn-outline-light m-1">Dark Mode</a>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="mb-4 text-center">About Me</h2>
+            <div class="card shadow border-0 p-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="src/Reinard_Pieters.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow" style="max-width: 180px;">
+                </div>
+                <div class="col-md-8">
+                  <p class="">
+                    I'm <strong>Reinard Pieters</strong>, a passionate and driven computing student currently pursuing a Bachelor's degree in Computing at <strong>Belgium Campus ITversity</strong>. My core interests lie in <strong>machine learning, system design, cybersecurity, and server management</strong> — areas where I've invested time both academically and practically.
+                  </p>
+
+                  <p class="">
+                    I thrive in environments that require critical thinking, creativity, and adaptability. Whether I'm working on a secure medical consent system using Flutter and Node.js, managing PostgreSQL databases, or training ML models for weather prediction, I enjoy tackling complex problems and building practical, user-focused solutions.
+                  </p>
+
+                  <p class="">
+                    Beyond the technical side, I’m committed to continuous learning and collaborative growth. I’ve worked on multidisciplinary teams, contributed to open-source-style internal projects, and enjoy mentoring peers when the opportunity arises. I'm also deeply interested in the ethical implications of technology and believe in using software to make a meaningful impact in people’s lives.
+                  </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  <!-- GitHub Section -->
+  <section id="github">
+    <div class="container">
+      <h2 class="mb-4">GitHub Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Weather Prediction using Machine Learning</h5>
+                <p class="card-text">
+                A web application that uses trained machine learning models to predict weather conditions based on user-provided data such as temperature, humidity, and wind speed. Built for educational purposes using regression techniques.
+                </p>
+              <a href="https://github.com/ReinardPieters/MLG382_Assignment_2" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <div class="card-body">
+              <h5 class="card-title">Community Portal</h5>
+                <p class="card-text">
+                    A dynamic Node.js web app built with Express.js and EJS, designed to serve as a central platform for sharing community news, events, and communication. Features a working contact form and responsive layout.
+                </p>
+              <a href="https://github.com/ReinardPieters/WPR381_Project" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+    <div class="col-md-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+            <h5 class="card-title">BC Student Wellness - Milesonte 1</h5>
+            <p class="card-text">
+                A two-part academic system developed using Java, JSP, and PostgreSQL. Delivers a web portal for student registration and login with secure password hashing, session management, and form validation. Designed to demonstrate backend logic, servlet control, and database integration.
+            </p>
+            <a href="https://github.com/ReinardPieters/BCStudentWellnessSystem" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+            <h5 class="card-title">BC Student Wellness – Milestone 2</h5>
+            <p class="card-text">
+                A standalone Java Swing application developed to manage student wellness services. Implements appointment, counselor, and feedback management using an MVC architecture and Apache Derby database. Features a tab-based GUI with full CRUD functionality and persistent storage.
+            </p>
+            <a href="https://github.com/ReinardPieters/BCWellnessMilestone2" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+                <h5 class="card-title">Digital Consent Form System</h5>
+                <p class="card-text">
+                    A secure digital consent form system developed for a real-world medical practice. It includes a backend server built with Node.js and Express for data handling, and a Flutter mobile app that allows patients to complete, sign, and submit consent forms. The system also integrates PDF generation and email dispatch to relevant doctors.
+                    <br><br>
+                    Due to the inclusion of sensitive medical data, the repository remains private.
+                </p>
+                <span class="badge bg-secondary">Private Repo</span>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="py-5" style="background-color: var(--bs-body-bg);">
+        <div class="container">
+            <h2 class="mb-4 text-center">Curriculum Vitae</h2>
+
+            <div class="d-flex justify-content-center">
+            <div class="bg-white shadow rounded overflow-hidden" style="width: 100%; max-width: 900px;">
+                <iframe
+                src="src/Reinard_Pieters_CV_Final.pdf"
+                style="width: 100%; height: 90vh; border: none;"
+                ></iframe>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
+<script>
+  const toggleBtn = document.getElementById("themeToggle");
+  const html = document.documentElement;
+  const body = document.body;
+
+  function updateThemeText() {
+    const theme = body.getAttribute("data-bs-theme");
+    toggleBtn.textContent = theme === "dark" ? "Light Mode" : "Dark Mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    const current = body.getAttribute("data-bs-theme");
+    const next = current === "dark" ? "light" : "dark";
+    body.setAttribute("data-bs-theme", next);
+    updateThemeText();
+  });
+
+  updateThemeText();
+</script>
